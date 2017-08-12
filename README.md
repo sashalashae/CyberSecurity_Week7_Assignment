@@ -31,6 +31,21 @@ Time spent: 2 hours spent in total
 - [x] Affected source code:
 - [Link 2](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
 
+3\. [x]  (Required) WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting (XSS) via Image Filename
+- [x] Summary: 
+- Vulnerability types: XSS
+- Tested in version: 4.2.2
+- Fixed in version: 4.2.10
+
+- [x] GIF Walkthrough:<img src='http://i.imgur.com/xoOxt4Y.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' /> 
+- [x] Steps to recreate: 
+- Choose an image that you will change the name of in your computers files.
+- Rename the image to a<img src=a onerror=alert(document.cookie)>.jpg, then upload the image to WordPress
+- Click on the image and then click view attachment page.
+- You will recieve an error message and be redirected to the images source.
+- [x] Affected source code:
+- [Link 3](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
+
 
 
 
