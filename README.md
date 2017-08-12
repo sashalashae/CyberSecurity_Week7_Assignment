@@ -18,7 +18,7 @@ Time spent: 2 hours spent in total
 - [x] Affected source code:
 - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
 
-1\. [x]  (Required) WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+2\. [x]  (Required) WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
 - [x] Summary: 
 - Vulnerability types: XSS Injection
 - Tested in version: 4.1.1
