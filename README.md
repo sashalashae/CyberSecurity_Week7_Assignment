@@ -9,14 +9,12 @@ Time spent: 2 hours spent in total
 ## Pentesting Report
 
 1\. [x]  (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
-1\. [x] Summary: 
-- Vulnerability types: XSS Injection
-- Tested in version: Wordpress 4.2
-- Fixed in version: Wordpress 4.2
-1\. [x] GIF Walkthrough: 
-<img src='http://i.imgur.com/jeGAJgF.gif' />
-1\. [x] Steps to recreate:
-Go to the comments section of the page.  Enter in <script>while(1){alert(document.cookie);}</script> in the comments box.  Warning once you click submit, the page will refresh and you will have an infinite amount of alert messages.  After you are done with this vulnerability, to end the message, go to the info page and delete the comment.
+- [x] Summary: 
+- Vulnerability types: XSS
+- Tested in version: 4.2
+- Fixed in version: 4.2
+- [x] GIF Walkthrough:<img src='http://i.imgur.com/jeGAJgF.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' /> 
+- [x] Steps to recreate: Go to the comments section of the page.  Enter in <script>while(1){alert(document.cookie);}</script> in the comments box.  Warning once you click submit, the page will refresh and you will have an infinite amount of alert messages.  After you are done with this vulnerability, to end the message, go to the info page and delete the comment.
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
