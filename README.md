@@ -2,7 +2,7 @@
 
 # Project 7 - WordPress Pentesting
 
-Time spent: 2 hours spent in total
+Time spent: 4 hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -16,7 +16,7 @@ Time spent: 2 hours spent in total
 - [x] GIF Walkthrough:<img src='http://i.imgur.com/jeGAJgF.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' /> 
 - [x] Steps to recreate: Go to the comments section of the page.  Enter in <script>while(1){alert(document.cookie);}</script> in the comments box.  Warning once you click submit, the page will refresh and you will have an infinite amount of alert messages.  After you are done with this vulnerability, to end the message, go to the info page and delete the comment.
 - [x] Affected source code:
-- [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+- [Link 1](https://compsecurityconcepts.wordpress.com/tag/cross-site-scripting/)
 
 2\. [x]  (Required) WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
 - [x] Summary: 
@@ -46,13 +46,27 @@ Time spent: 2 hours spent in total
 - [x] Affected source code:
 - [Link 3](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
 
+4\. [x]  (Optional) WordPress 4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeded
+- [x] Summary: 
+- Vulnerability types: XSS and Inject
+- Tested in version: 4.2.2
+- Fixed in version: 4.2.13
+
+- [x] GIF Walkthrough:<img src='http://i.imgur.com/mPknDdx.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' /> 
+- [x] Steps to recreate: 
+- Choose an youtube video that you would like to embed into the post
+- Add "[embed src=‘https://youtube.come/embed/12345\x3csvg onload=while(1){alert(document.cookie};\x3e’][/embed]" with the URL
+- Post the post
+- You will recieve an error message and be redirected to the images source.
+- [x] Affected source code:
+- [Link 4](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
 
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
+This assignment was challenging, but interesting.
 
 ## License
 
